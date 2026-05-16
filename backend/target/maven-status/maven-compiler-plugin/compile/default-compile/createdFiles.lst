@@ -1,0 +1,5 @@
+br\com\umbrella\dao\MissaoDAO.class
+br\com\umbrella\controller\MissaoController.class
+br\com\umbrella\Main.class
+br\com\umbrella\model\Missao.class
+br\com\umbrella\util\ConnectionFactory.class

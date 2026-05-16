@@ -1,0 +1,116 @@
+:root {
+  --vermelho-umbrella: #ff0000;
+  --preto-fundo: #0a0a0a;
+  --cinza-painel: #1a1a1a;
+}
+
+body {
+  background-color: var(--preto-fundo);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* --- LOGO / TÍTULO DA UMBRELLA ARRUMADO --- */
+h1 { 
+  color: var(--vermelho-umbrella); 
+  letter-spacing: 6px; 
+  font-size: 2.2rem;       /* Tamanho ideal para não quebrar a linha no container */
+  text-transform: uppercase;
+  margin: 20px auto;
+  white-space: nowrap;     /* Força o texto a ficar em uma linha única */
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.4); /* Efeito neon de terminal */
+}
+
+/* Subtítulo do painel */
+.container > p, .container > span {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+/* --- DIVISÓRIA --- */
+hr {
+  border: 0;
+  height: 1px;
+  background: white;
+  margin: 30px 0;
+  opacity: 0.7;
+}
+
+/* --- FORMULÁRIO --- */
+.card-form {
+  background: var(--cinza-painel);
+  padding: 25px;
+  border: 1px solid rgba(255, 0, 0, 0.5); /* Borda vermelha mais sutil */
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+input, select, button {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 12px;
+  background: #222;
+  border: 1px solid #444;
+  color: white;
+  box-sizing: border-box;
+  font-family: inherit; /* Mantém a fonte Courier nos inputs */
+}
+
+input::placeholder {
+  color: #666;
+}
+
+button {
+  background: var(--vermelho-umbrella);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.2s ease;
+}
+
+button:hover { 
+  background: #b30000; 
+}
+
+/* --- LISTA DE MISSÕES --- */
+.missao-item {
+  background: #1e1e1e;
+  margin: 15px 0;
+  padding: 20px;
+  text-align: left;
+  border-left: 5px solid var(--vermelho-umbrella);
+  border-radius: 0 4px 4px 0;
+}
+
+.missao-item strong {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.missao-item p {
+  margin: 5px 0 15px 0;
+  color: #ccc;
+}
+
+.badge {
+  font-weight: bold;
+}
+.badge.ALTA { color: #ff0000; }
+.badge.MEDIA { color: #ffcc00; }
+.badge.BAIXA { color: #00ff00; }
